@@ -16,7 +16,7 @@ a {
   color: blue;
 }
 .hero {
-  padding: 80px 20px;
+  padding: 120px 20px;
   text-align: center;
   background: #3bacac;
   color: #fff;
@@ -58,10 +58,17 @@ a {
   font-weight: 500;
   color: #2c3e50;
 }
+.main-nav a {
+  transition: color 0.2s;
+}
+
+.main-nav a:hover {
+  color: #2980b9;
+}
 
 
 .onas {
-  padding: 60px 40px;
+  padding: 100px 40px;
   background: #f4f4f4;
 }
 
@@ -95,6 +102,24 @@ a {
   background: #f4f4f4;
 }
 
+.onas-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.onas-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.case-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.case-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
 .case h2 {
   text-align: center;
   font-size: 2rem;
@@ -114,6 +139,8 @@ a {
   padding: 28px 24px;
   border-radius: 8px;
   border-left: 4px solid #2980b9;
+  transform: translateY(10px);
+  animation: fadeInUp 0.5s forwards;
 }
 
 .case-card h3 {
@@ -128,6 +155,11 @@ a {
   line-height: 1.6;
 }
 
+.case-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
 .btn{
   background: #e67e22;
   color: #fff;
@@ -136,4 +168,48 @@ a {
   display: inline-block;
   margin-top: 20px;
   font-weight: 600;
+}
+
+.btn {
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(230,126,34,0.4);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact {
+  padding: 100px 40px;
+  text-align: center;
+  background: #f4f4f4;
+}
+
+.contact h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.contact a {
+  color: #2980b9;
+  font-weight: 600;
+}
+.site-footer {
+  background: #2c3e50;
+  color: #bdc3c7;
+  text-align: center;
+  padding: 32px;
+  font-size: 0.9rem;
 }
